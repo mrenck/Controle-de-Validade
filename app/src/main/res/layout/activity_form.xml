@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <EditText
+        android:id="@+id/codigoText"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <EditText
+        android:id="@+id/descText"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="179dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Descrição"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <EditText
+        android:id="@+id/validadeText"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/codigoText"
+        android:layout_marginBottom="122dp"
+        android:ems="10"
+        android:hint="Validade"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="359dp" />
+
+    <EditText
+        android:id="@+id/qtdText"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/codigoText"
+        android:layout_alignTop="@+id/validadeText"
+        android:ems="10"
+        android:hint="Quant"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="359dp" />
+
+    <EditText
+        android:id="@+id/precoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/codigoText"
+        android:layout_marginBottom="70dp"
+        android:ems="10"
+        android:hint="Preço"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/codigoText"
+        android:layout_marginBottom="12dp"
+        android:text="Cadastrar" />
+
+</RelativeLayout>
